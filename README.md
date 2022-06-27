@@ -20,4 +20,4 @@ ps: 1 `data.pickle` after we run `data_generation.py`, which has been divided in
 
 > Then, we can use this DNN model do everything we want, including inferring the structural of gene networks by `Edge_removal.py` (corresponding `The_role_X1.png` can be obtained), getting the monotonicity of the synthesis rate f with respect to the variable x by `monotonicity_f.py` (corresponding `f1_f2_X2.png` can be obtained), and predicting the steady states by  `predict_stable_state.py`.
 
-## Other files "Four_dimensional" and "Oscillation" focus on the inference of gene regulatory networks. And in "Four_dimensional" file, We additionally test the performance of DNN on network inference when it has 3 hidden layers.
+Other files "Four_dimensional" and "Oscillation" focus on the inference of gene regulatory networks. And in "Four_dimensional" file, We additionally test the performance of DNN on network inference when it has 3 hidden layers.
