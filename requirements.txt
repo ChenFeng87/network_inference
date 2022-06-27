@@ -1,0 +1,8 @@
+numpy
+torch==1.4.0
+pickle
+argparse
+time
+scikit-learn
+matplotlib
+os
