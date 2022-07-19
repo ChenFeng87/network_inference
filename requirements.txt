@@ -1,8 +1,9 @@
-numpy
+python==3.7.9
+numpy==1.19.2
 torch==1.4.0
 pickle
 argparse
 time
 scikit-learn
-matplotlib
+matplotlib==3.3.2
 os
