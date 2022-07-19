@@ -84,8 +84,8 @@ print('\n----------   calculating f1 and f2 finish ----------')
 
 print('\n----------   begin picture ----------')
 plt.figure(figsize=(2, 2))
-plt.scatter(tt, f1, label='$f_1$', color='', marker='o', edgecolors='#0dbc3e', s=20)  # dark green
-plt.scatter(tt, f2, label='$f_2$', color='', marker='o', edgecolors='#6464ff', s=20)  # dark blue
+plt.scatter(tt, f1, label='$f_1$', marker='o', edgecolors='#0dbc3e', s=20)  # dark green
+plt.scatter(tt, f2, label='$f_2$', marker='o', edgecolors='#6464ff', s=20)  # dark blue
 plt.yticks([0, 0.8, 1.6])
 plt.tick_params(labelsize=8)
 plt.xticks([0, 0.5, 1.0])
