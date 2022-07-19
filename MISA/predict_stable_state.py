@@ -66,8 +66,10 @@ for i in range(NN):
         x2 = x1 + x3 * 0.5 - x1 * 0.5 * 1
     y.append(x2[0][1])
     z.append(x2[0][0])
-yy1 = np.array(y)
-zz1 = np.array(z)
+y=torch.tensor(y)
+yy1 = y.detach().numpy()
+z=torch.tensor(z)
+zz1 = z.detach().numpy()
 
 print('\n----------   start counting steady states  ----------')
 sum1 = 0
