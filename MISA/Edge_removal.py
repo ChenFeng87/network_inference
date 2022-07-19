@@ -164,7 +164,8 @@ print('\n----------   begin picture ----------')
 tt = np.linspace(0, NK, NK+1)
 plt.figure(figsize=(4.5, 2))
 plt.subplot(1, 2, 1)
-plt.plot(tt, x_1, label='X1-before', color='#98FB98', linewidth=4.0)  # pale green
+x_1=torch.tensor(x_1)
+plt.plot(tt, x_1.detach().numpy(), label='X1-before', color='#98FB98', linewidth=4.0)  # pale green
 plt.plot(tt, xx_11_1, label='X1-after', color='#0dbc3e', linewidth=4.0)  # dark green
 plt.ylim(0, 1.4)
 plt.xlim(-0.5, 21)
@@ -177,7 +178,8 @@ plt.title("Block the link from X1 to X1")
 plt.legend()
 
 plt.subplot(1, 2, 2)
-plt.plot(tt, x_2, label='X2-before', color='#ADD8E6', linewidth=4.0)  # light blue
+x_2=torch.tensor(x_2)
+plt.plot(tt, x_2.detach().numpy(), label='X2-before', color='#ADD8E6', linewidth=4.0)  # light blue
 plt.plot(tt, xx_12_2, label='X2-after', color='#6464ff', linewidth=4.0)  # dark blue
 plt.xlabel("Time", fontsize=8)
 plt.ylim(0, 1.4)
