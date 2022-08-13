@@ -9,7 +9,7 @@ import time
 print('\n----------   Begin generating time series data for single cell ----------')
 print('\n--   You need to wait about 10 seconds to get a data.pickle file ')
 time1 = time.time()
-cell_data = np.loadtxt('4gene_raw_data.txt')
+cell_data = np.loadtxt('4gene_raw_data.txt',skiprows=1)
 all_cell = np.array(cell_data)
 
 all_cell=np.array(all_cell)
