@@ -5,6 +5,18 @@ from scipy import interpolate
 import random
 import time
 
+# The single-cell dataset used in this work is stored in "single_cell_data_set.xls", which is derived from reference:
+#"Guo, G. ,Huss, M., Tong, G. Q.,Wang, C., Li Sun, L., Clarke, N. D. and Robson, P. (2010) 
+# Resolution of Cell Fate Decisions Revealed by Single-Cell Gene Expression Analysis from Zygote to Blastocyst. 
+# Development Cell, 18, 675-685".
+# As described in "Small_scale_single_cell_network_Fig4/readme.txt".
+
+# The dimension of this part is 48, and the column names are the same as the "Small_scale_single_cell_network_Fig4/single_cell_data_set.xls" table,
+# i.e., Actb, Ahcy, Aqp3, Atp12a, Bmp4, Cdx2, Creb312, Cebpa, Dab2, DppaI, Eomes, Esrrb,
+# Fgf4, Fgfr2, Fn1, Gapdh, Gata3, Gata4, Gata6, Grhl1, Grhl2, Hand1, Hnf4a, Id2,
+# Klf2, Klf4, Klf5, Krt8, Lcp1, Mbnl3, Msc, Msx2, Nanog, Pdgfa, Pdgfra, Pecam1,
+# Pou5f1, Runx1, Sox2, Sall4, Sox17, Snail, Sox13, Tcfap2a, Tcfap2c, Tcf23, Utf1, Tspan8
+
 # Generate time series data (single cell data, and the number of dimensions is 48)
 print('\n----------   Begin generating time series data for single cell ----------')
 print('\n--   You need to wait about 30 minutes to get a data.pickle file ')
